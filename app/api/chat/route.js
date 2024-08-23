@@ -5,7 +5,10 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const systemPrompt = `
 You are a rate my professor agent to help students find classes, that takes in user questions and answers them.
 For every user question, the top 3 professors that match the user question are returned.
-Use them to answer the question if needed. Do Not Use Markdown.
+(you don not need to search the RateMyProfessors site the results are already given below,
+just format the results such that they looks like general english)
+
+Do Not Use Markdown.
 `
 
 export async function POST(req) {
@@ -21,7 +24,6 @@ export async function POST(req) {
     const model = genAI.getGenerativeModel({ model: "text-embedding-004" });
     const result = await model.embedContent(text);
     const embedding = result.embedding;
-    // console.log(embedding.values)
     const results = await index.query({
         topK: 3,
         includeMetadata: true,
@@ -34,42 +36,19 @@ export async function POST(req) {
             `
 Returned Results:
 Professor: ${match.id}
-Review: ${match.metadata.stars}
+Review: ${match.metadata.review}
 Subject: ${match.metadata.subject}
 Stars: ${match.metadata.stars}
   \n\n`
     })
 
-    const lastMessage = data[data.length - 1]
-    const lastMessageContent = lastMessage.content + resultString
-    const lastDataWithoutLastMessage = data.slice(0, data.length - 1)
+    // console.log(resultString)
+    
+    const model_gen = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
-    const completion = await model.generateContentStream({
-        prompt: [
-            { role: 'system', content: systemPrompt },
-            ...lastDataWithoutLastMessage,
-            { role: 'user', content: lastMessageContent },
-        ].map(msg => msg.content).join("\n"),
-        stream: true,
-    });
+    // const completion = await model_gen.generateContentStream(resultString);
+    const gen_result = await model_gen.generateContent(`${systemPrompt}\nQuery: ${text}\n${data}\n`);
+    const response = await gen_result.response.text();
 
-    const stream = new ReadableStream({
-        async start(controller) {
-            const encoder = new TextEncoder()
-            try {
-                for await (const chunk of completion.stream) {
-                    const content = chunk.choices[0]?.delta?.content
-                    if (content) {
-                        const text = encoder.encode(content)
-                        controller.enqueue(text)
-                    }
-                }
-            } catch (err) {
-                controller.error(err)
-            } finally {
-                controller.close()
-            }
-        },
-    })
-    return new NextResponse(stream)
+    return new NextResponse(response)
 }
