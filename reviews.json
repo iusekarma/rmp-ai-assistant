@@ -1,0 +1,185 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. Jane Smith",
+        "subject": "Mathematics",
+        "stars": 4,
+        "review": "Dr. Smith explains concepts clearly and is always willing to help outside of class. The assignments are challenging but fair."
+      },
+      {
+        "professor": "Prof. John Doe",
+        "subject": "Mathematics",
+        "stars": 3,
+        "review": "Prof. Doe is knowledgeable, but his lectures can be a bit dry. The exams are tough, so make sure to study hard."
+      },
+      {
+        "professor": "Dr. Emily Johnson",
+        "subject": "Physics",
+        "stars": 5,
+        "review": "Dr. Johnson is amazing! She makes complex topics easy to understand and is very approachable. Highly recommended."
+      },
+      {
+        "professor": "Prof. Michael Lee",
+        "subject": "Physics",
+        "stars": 2,
+        "review": "Prof. Lee's lectures are difficult to follow, and he rarely provides extra help. The course is very challenging."
+      },
+      {
+        "professor": "Dr. Susan White",
+        "subject": "Computer Science",
+        "stars": 4,
+        "review": "Dr. White is very passionate about the subject and encourages students to think critically. The projects are interesting, but grading is strict."
+      },
+      {
+        "professor": "Prof. Alan Brown",
+        "subject": "Computer Science",
+        "stars": 3,
+        "review": "Prof. Brown knows his stuff, but sometimes the material is presented in a confusing way. The class workload is heavy."
+      },
+      {
+        "professor": "Dr. Robert Green",
+        "subject": "History",
+        "stars": 5,
+        "review": "Dr. Green is a fantastic storyteller who brings history to life. His classes are engaging and insightful."
+      },
+      {
+        "professor": "Prof. Lisa Miller",
+        "subject": "History",
+        "stars": 4,
+        "review": "Prof. Miller is very knowledgeable, but she moves quickly through the material. It's important to keep up with the readings."
+      },
+      {
+        "professor": "Dr. William Davis",
+        "subject": "Chemistry",
+        "stars": 3,
+        "review": "Dr. Davis knows the subject well, but his teaching style can be confusing at times. The labs are interesting but require a lot of work."
+      },
+      {
+        "professor": "Prof. Karen Wilson",
+        "subject": "Chemistry",
+        "stars": 4,
+        "review": "Prof. Wilson is a great teacher who explains the concepts clearly. The exams are challenging but fair."
+      },
+      {
+        "professor": "Dr. Charles Evans",
+        "subject": "Biology",
+        "stars": 5,
+        "review": "Dr. Evans is excellent at breaking down complex topics into understandable pieces. His enthusiasm for biology is infectious."
+      },
+      {
+        "professor": "Prof. Jennifer Taylor",
+        "subject": "Biology",
+        "stars": 3,
+        "review": "Prof. Taylor's lectures are informative, but they can be a bit monotonous. The labs are well-organized and helpful."
+      },
+      {
+        "professor": "Dr. George Martin",
+        "subject": "Economics",
+        "stars": 4,
+        "review": "Dr. Martin has a deep understanding of economics and presents the material clearly. The assignments are challenging but rewarding."
+      },
+      {
+        "professor": "Prof. Sarah Clark",
+        "subject": "Economics",
+        "stars": 2,
+        "review": "Prof. Clark's lectures are difficult to follow, and the exams are very tough. The course material is dense."
+      },
+      {
+        "professor": "Dr. Andrew Scott",
+        "subject": "Philosophy",
+        "stars": 5,
+        "review": "Dr. Scott is an engaging lecturer who encourages critical thinking. His classes are thought-provoking and enjoyable."
+      },
+      {
+        "professor": "Prof. Rachel Adams",
+        "subject": "Philosophy",
+        "stars": 3,
+        "review": "Prof. Adams is knowledgeable, but her lectures can be a bit abstract. Participation in class discussions is key."
+      },
+      {
+        "professor": "Dr. Victoria Reed",
+        "subject": "English Literature",
+        "stars": 4,
+        "review": "Dr. Reed brings a lot of energy to her classes and really makes the material come alive. The reading list is extensive but worthwhile."
+      },
+      {
+        "professor": "Prof. Thomas Wright",
+        "subject": "English Literature",
+        "stars": 3,
+        "review": "Prof. Wright's lectures are informative but sometimes dry. The essays are graded strictly, so make sure to meet all the criteria."
+      },
+      {
+        "professor": "Dr. Laura Harris",
+        "subject": "Sociology",
+        "stars": 5,
+        "review": "Dr. Harris is passionate about sociology and encourages students to engage with the material critically. Her classes are very interactive."
+      },
+      {
+        "professor": "Prof. Steven Moore",
+        "subject": "Sociology",
+        "stars": 3,
+        "review": "Prof. Moore's lectures are interesting, but he sometimes goes off on tangents. The assignments are straightforward."
+      },
+      {
+        "professor": "Dr. Daniel Hughes",
+        "subject": "Psychology",
+        "stars": 5,
+        "review": "Dr. Hughes is fantastic! His lectures are engaging, and he connects theoretical concepts to real-world examples very well."
+      },
+      {
+        "professor": "Prof. Megan Price",
+        "subject": "Psychology",
+        "stars": 3,
+        "review": "Prof. Price knows the material well, but her lectures can be a bit repetitive. The assignments are manageable but require consistent effort."
+      },
+      {
+        "professor": "Dr. Brian Carter",
+        "subject": "Political Science",
+        "stars": 4,
+        "review": "Dr. Carter is passionate about political science and encourages debates in class. The exams are challenging but fair."
+      },
+      {
+        "professor": "Prof. Olivia Martin",
+        "subject": "Political Science",
+        "stars": 2,
+        "review": "Prof. Martin's lectures lack structure, and it can be difficult to follow along. The grading is tough, so be prepared."
+      },
+      {
+        "professor": "Dr. Christopher Young",
+        "subject": "Art History",
+        "stars": 5,
+        "review": "Dr. Young's lectures are fascinating, and he has a deep knowledge of art history. The course is both informative and enjoyable."
+      },
+      {
+        "professor": "Prof. Amanda Roberts",
+        "subject": "Art History",
+        "stars": 3,
+        "review": "Prof. Roberts is knowledgeable, but her lectures can be a bit dry. The course load is manageable, with fair grading."
+      },
+      {
+        "professor": "Dr. Patricia Thompson",
+        "subject": "Sociology",
+        "stars": 4,
+        "review": "Dr. Thompson is great at engaging students in discussions. Her classes are interactive, and she provides valuable feedback."
+      },
+      {
+        "professor": "Prof. Jason Edwards",
+        "subject": "Sociology",
+        "stars": 3,
+        "review": "Prof. Edwards is knowledgeable, but the lectures can be hard to follow at times. The assignments require a lot of critical thinking."
+      },
+      {
+        "professor": "Dr. Elizabeth Hall",
+        "subject": "Environmental Science",
+        "stars": 5,
+        "review": "Dr. Hall is very passionate about environmental science. Her classes are inspiring, and she provides plenty of real-world applications."
+      },
+      {
+        "professor": "Prof. Matthew Clark",
+        "subject": "Environmental Science",
+        "stars": 4,
+        "review": "Prof. Clark's lectures are well-organized and informative. The assignments are challenging but help in understanding the material."
+      }
+    ]
+  }
+  
